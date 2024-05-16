@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@wordpress/api-fetch": "^6.54.0",
+    "axios": "^1.6.8"
+  }
+}

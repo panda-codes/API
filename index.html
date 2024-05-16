@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordPress Posts</title>
+</head>
+<body>
+
+<h1>WordPress Posts</h1>
+
+<div id="landing-page-container"></div>
+
+<script>
+    import apiFetch from "@wordpress/api-fetch"
+// Function to fetch and display WordPress posts
+// Define the URL of the WordPress landing page you want to fetch
+const wordpressURL = 'https://pandatech-1.000webhostapp.com/sample-page';
+
+apiFetch( { path: '/wp/v2/posts' } ).then( ( posts ) => {
+    console.log( posts );
+} );
+
+// Call the function to fetch WordPress posts when the page loads
+//document.addEventListener('DOMContentLoaded', fetchWordPressPosts);
+</script>
+
+</body>
+</html> 
